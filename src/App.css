@@ -1,0 +1,64 @@
+#reader {
+    border: none !important;
+    background-color: #828282;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 10px !important;
+    min-width: 250px;
+    min-height: 250px;
+}
+
+#reader button {
+    background-color: #f22d2d !important;
+    color: white !important;
+    border-radius: 6px !important;
+    padding: 10px 20px !important;
+    font-family: inherit !important;
+    font-weight: 600 !important;
+    border: none !important;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#reader button:hover {
+    filter: brightness(1.1);
+}
+
+#html5-qrcode-button-camera-permission {
+    background-color: #10b981 !important;
+}
+
+#html5-qrcode-button-camera-stop {
+    background-color: #ef4444 !important;
+}
+
+#reader__dashboard_section_csr span {
+    display: none !important;
+}
+
+#reader select {
+    border: 1px solid #e2e8f0 !important;
+    padding: 8px !important;
+    border-radius: 6px !important;
+    margin-top: 10px !important;
+}
+
+
+#reader video {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important; 
+    border-radius: 8px;
+}
+
+#reader__scan_region {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+#reader {
+    width: 100% !important;
+    max-width: 500px; 
+    border: none !important;
+}

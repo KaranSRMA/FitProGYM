@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer base {
+  /* 1. Global scrollbar styling for Chrome, Safari, Edge, and Brave */
+  ::-webkit-scrollbar {
+    width: 8px; /* Slightly wider for better accessibility */
+    height: 8px; /* For horizontal scrolling */
+  }
+
+  /* 2. The Track (The background area) */
+  ::-webkit-scrollbar-track {
+    background: #09090b; /* matches zinc-950 */
+  }
+
+  /* 3. The Thumb (The draggable part) */
+  ::-webkit-scrollbar-thumb {
+    background: #27272a; /* matches zinc-800 */
+    border-radius: 100px; /* Makes it very round/smooth */
+    border: 2px solid #09090b; /* Adds padding effect around thumb */
+    transition: background 0.3s ease;
+  }
+
+  /* 4. Hover effect to make it feel interactive */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ef4444; /* red-500: matches your gym brand color */
+  }
+
+  /* 5. Support for Firefox (Does not support custom hover/border yet) */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #27272a #09090b;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*:focus {
+  outline: none;
+}
