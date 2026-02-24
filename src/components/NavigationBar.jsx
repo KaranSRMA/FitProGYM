@@ -6,14 +6,12 @@ import { useSelector } from 'react-redux';
 import { toast } from 'sonner';
 import axios from 'axios';
 import { useInfiniteQuery, useQueryClient } from '@tanstack/react-query';
-import { div } from 'motion/react-client';
 
 
 export function NavigationBar() {
     const location = useLocation();
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [isNotificationOpen, setIsNotificationOpen] = useState(false);
-    const [notifications, setNotifications] = useState([]);
     const [readButtonDisabled, setreadButtonDisabled] = useState(false);
     const notificationRef = useRef(null);
     const socketRef = useRef(null);

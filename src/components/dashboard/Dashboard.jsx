@@ -19,7 +19,6 @@ import {
     LogIn,
     LogOut,
     Dumbbell,
-    Users,
     Target,
     Scale,
     Ruler,
